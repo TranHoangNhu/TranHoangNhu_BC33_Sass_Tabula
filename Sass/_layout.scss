@@ -1,0 +1,49 @@
+@import 'components';
+
+header {
+
+    //   background: url(../img/);  
+    a {
+        .logo {
+            img {
+                width: 80px;
+            }
+        }
+    }
+
+    .navbar {
+        nav {
+            a {
+                @include text($text-xs, $text-semibold, $text-c1-dark);
+
+                &:hover {
+                    color: $text-c1-primary;
+                }
+
+                padding-right: 30px;
+            }
+        }
+
+        .navbar__contact {
+            a {
+                &:nth-child(1) {
+                    @include button;
+                    box-shadow: 0 0 0 3em #b61984 inset;
+
+                    &:hover {
+                        color: #b61984;
+                        box-shadow: 0 0 0 1px #b61984 inset;
+                        transition-duration: .3s;
+                    }
+                }
+                .fa-brands{
+                    color: $text-c1-half-dark;
+                    padding-left: 5px;
+                    &:hover{
+                     color: $text-c1-primary;
+                    }
+                }
+            }
+        }
+    }
+}
